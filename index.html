@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Component with form validation</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>  
+    <div class="main-container">
+        <div class="text-content">
+            <h1 class="content-heading">
+                Learn to code by watching others
+            </h1>
+            <p class="content-para">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                but understanding how developers think is invaluable. 
+            </p>
+        </div>
+        <div class="form-content">
+            <div class="free-ad">
+                <strong>Try it free 7 days</strong> then $20/mo. thereafter
+            </div>
+            <form class="form" name="form1" onsubmit="return submitted()">
+                <input type="text" name="first-name" id="first-name" placeholder="First Name" class="common">
+
+                <p class="first-name-para">First Name cannot be empty</p>
+
+                <input type="text" name="last-name" id="last-name" placeholder="Last Name" class="common">
+
+                <p class="last-name-para">Last Name cannot be empty</p>
+
+                <input type="email" name="email-address" id="email-address" placeholder="Email Address" class="common">
+
+                <p class="email-para">Looks like this is not an email</p>
+
+                <input type="password" name="password" id="password" placeholder="Password" class="common">
+
+                <p class="password-para">Password cannot be empty</p>
+
+                <input type="submit" class="trial" value="Claim your free trial">
+
+                <div class="terms">By clicking the button, you are agreeing to our <span><a href="#"><strong>Terms and Services</strong></a></span></div>
+            </form>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
